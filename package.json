@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "node lib/db.test.js"
+    "start-dev": "nodemon index.js",
+    "test": "exit 1"
   },
   "author": "Sergey Maximov",
   "license": "MIT",
@@ -13,5 +14,8 @@
     "mongoose": "^4.11.1",
     "restify": "^5.0.0",
     "restify-cors-middleware": "^1.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.11"
   }
 }
