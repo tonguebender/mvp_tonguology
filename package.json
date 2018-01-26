@@ -1,0 +1,17 @@
+{
+  "name": "tongulogy",
+  "version": "0.0.0",
+  "description": "REST API for tongues logic",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node lib/db.test.js"
+  },
+  "author": "Sergey Maximov",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^4.11.1",
+    "restify": "^5.0.0",
+    "restify-cors-middleware": "^1.1.0"
+  }
+}
