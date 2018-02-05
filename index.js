@@ -2,6 +2,9 @@ require('./lib/server');
 
 // Process management stuff
 const db = require('./lib/db');
+const actions = require('./lib/actions');
+
+actions.start();
 
 // todo: needs improvement
 process.on('SIGINT', function() {
