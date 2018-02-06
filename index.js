@@ -1,11 +1,12 @@
 require('./lib/server');
 
+// todo: refactor to observers or similar
+const actions = require('./lib/actions');
+actions.startLearningCircle();
+
+
 // Process management stuff
 const db = require('./lib/db');
-const actions = require('./lib/actions');
-
-actions.start();
-
 // todo: needs improvement
 process.on('SIGINT', function() {
   db.closeConnection(() => {
