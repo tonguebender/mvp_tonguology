@@ -2,7 +2,7 @@ require('./lib/server');
 
 // todo: refactor to observers or similar
 const actions = require('./lib/actions');
-actions.startLearningCircle();
+actions.start();
 
 
 // Process management stuff
