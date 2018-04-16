@@ -19,6 +19,7 @@
   "scripts": {
     "start": "env $(cat .env | tr \"\\n\" \" \") node index.js",
     "start-dev": "env $(cat .env | tr \"\\n\" \" \") nodemon -i ./scripts index.js",
-    "test": "env $(cat .env | tr \"\\n\" \" \") node ./lib/**.tests.js"
+    "test": "env $(cat .env | tr \"\\n\" \" \") node ./lib/**.tests.js",
+    "prettier": "prettier --write \"lib/**/*.js\""
   }
 }
