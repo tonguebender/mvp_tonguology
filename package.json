@@ -13,6 +13,7 @@
     "restify-cors-middleware": "^1.1.0"
   },
   "devDependencies": {
+    "eslint": "^4.19.1",
     "nodemon": "^1.14.11",
     "prettier": "^1.12.0"
   },
@@ -20,6 +21,7 @@
     "start": "env $(cat .env | tr \"\\n\" \" \") node index.js",
     "start-dev": "env $(cat .env | tr \"\\n\" \" \") nodemon -i ./scripts index.js",
     "test": "env $(cat .env | tr \"\\n\" \" \") node ./lib/**.tests.js",
-    "prettier": "prettier --write \"lib/**/*.js\""
+    "prettier": "prettier --write \"lib/**/*.js\"",
+    "lint": "eslint \"lib/**/*.js\""
   }
 }
